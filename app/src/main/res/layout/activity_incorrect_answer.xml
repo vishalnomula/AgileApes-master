@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CorrectAnswerActivity">
+
+    <TextView
+        android:id="@+id/tvIncorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="140dp"
+        android:text="Incorrect!"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:text="User Answer"
+        app:layout_constraintEnd_toEndOf="@+id/tvIncorrect"
+        app:layout_constraintStart_toStartOf="@+id/tvIncorrect"
+        app:layout_constraintTop_toBottomOf="@+id/tvIncorrect" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="82dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvUserAnswer"
+        app:layout_constraintStart_toStartOf="@+id/tvUserAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserAnswer"
+        app:srcCompat="@drawable/banana" />
+
+    <TextView
+        android:id="@+id/tvBananasGained"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="+ 1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvLearnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Learn more"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btNextQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:onClick="goToQuiz"
+        android:text="Next Question"
+        app:layout_constraintEnd_toEndOf="@+id/tvLearnMore"
+        app:layout_constraintStart_toStartOf="@+id/tvLearnMore"
+        app:layout_constraintTop_toBottomOf="@+id/tvLearnMore" />
+
+    <Button
+        android:id="@+id/btTrackMyProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="200dp"
+        android:onClick="goToProgress"
+        android:text="Track My Progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btNextQuestion"
+        app:layout_constraintStart_toStartOf="@+id/btNextQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/btNextQuestion" />
+</android.support.constraint.ConstraintLayout>
