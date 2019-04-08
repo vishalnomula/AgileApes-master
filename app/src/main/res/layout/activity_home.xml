@@ -47,14 +47,14 @@
         android:textAlignment="center"
         android:textColor="@color/Brown"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/ivHomeBanana"
+        app:layout_constraintBottom_toTopOf="@+id/ivHomeBananaCartoon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btHomeInformation" />
+        app:layout_constraintTop_toBottomOf="@+id/btHomeInfo" />
 
     <ImageButton
-        android:id="@+id/btHomeInformation"
+        android:id="@+id/btHomeInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -66,7 +66,7 @@
         app:srcCompat="@drawable/info" />
 
     <ImageView
-        android:id="@+id/ivHomeBanana"
+        android:id="@+id/ivHomeBananaCartoon"
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -75,7 +75,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tvHomeBananaNumber"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btHomeInformation"
+        app:layout_constraintStart_toEndOf="@+id/btHomeInfo"
         app:srcCompat="@drawable/bananacartoon" />
 
     <TextView
@@ -87,14 +87,14 @@
         android:textAlignment="textStart"
         android:textColor="@color/Brown"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="@+id/ivHomeBanana"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHomeBananaCartoon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/ivHomeBanana" />
+        app:layout_constraintTop_toTopOf="@+id/ivHomeBananaCartoon" />
 
     <ImageButton
-        android:id="@+id/ibHomeHelp"
+        android:id="@+id/btHomeHelp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -113,10 +113,10 @@
         android:layout_marginEnd="8dp"
         android:background="@android:color/transparent"
         android:onClick="launchSettingsScreen"
-        app:layout_constraintBottom_toBottomOf="@+id/btHomeInformation"
+        app:layout_constraintBottom_toBottomOf="@+id/btHomeInfo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btHomeInformation"
+        app:layout_constraintTop_toTopOf="@+id/btHomeInfo"
         app:srcCompat="@drawable/settings" />
 
 </android.support.constraint.ConstraintLayout>
