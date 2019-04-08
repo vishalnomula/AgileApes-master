@@ -4,130 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/junglewithvines"
     tools:context=".HomeActivity">
 
     <TextView
-        android:id="@+id/tvAppName"
+        android:id="@+id/tvHomeAgileApes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/windlass"
         android:text="Agile Apes"
+
         android:textAlignment="center"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/ivHomeMonkeyImage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="@color/Brown"
+        android:textSize="72sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="4dp" />
 
     <ImageView
-        android:id="@+id/ivHomeMonkeyImage"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="28dp"
+        android:id="@+id/ivHomeMonkeyCartoonClipArt"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAppName"
-        app:srcCompat="@drawable/monkey_image" />
+        app:layout_constraintTop_toBottomOf="@+id/tvHomeAgileApes"
+        app:srcCompat="@drawable/monkeycartoonclipart" />
 
     <Button
         android:id="@+id/btHomePlay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="@font/windlass"
         android:onClick="launchQuizScreen"
         android:text="Play"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        android:textColor="@color/Brown"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/ivHomeBanana"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btHomeInformation" />
 
     <ImageButton
         android:id="@+id/btHomeInformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
         android:onClick="launchAboutScreen"
-        app:layout_constraintBottom_toBottomOf="@+id/btHomeTrophy"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btHomeTrophy"
-        app:srcCompat="@android:drawable/ic_dialog_info" />
-
-    <ImageButton
-        android:id="@+id/btHomeTrophy"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/ibHomeHelp"
-        app:layout_constraintStart_toEndOf="@+id/btHomeInformation"
-        app:layout_constraintTop_toBottomOf="@+id/btHomePlay"
-        app:srcCompat="@android:drawable/sym_def_app_icon" />
+        app:layout_constraintEnd_toStartOf="@+id/btHomeSettings"
+        app:layout_constraintTop_toBottomOf="@+id/ivHomeMonkeyCartoonClipArt"
+        app:srcCompat="@drawable/info" />
 
     <ImageView
         android:id="@+id/ivHomeBanana"
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tvHomeBananaNumber"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btHomeInformation"
-        app:layout_constraintTop_toBottomOf="@+id/btHomeTrophy"
-        app:srcCompat="@drawable/banana" />
+        app:srcCompat="@drawable/bananacartoon" />
 
     <TextView
         android:id="@+id/tvHomeBananaNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="no. of bananas"
+        android:fontFamily="@font/windlass"
+        android:text="3"
+        android:textAlignment="textStart"
+        android:textColor="@color/Brown"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="@+id/ivHomeBanana"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/ivHomeBanana" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="186dp"
-        android:layout_height="99dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Randomly Generated Quote or Fact"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHomeBananaNumber" />
-
     <ImageButton
         android:id="@+id/ibHomeHelp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/transparent"
         android:onClick="launchHowToPlayScreen"
-        app:layout_constraintBottom_toBottomOf="@+id/btHomeTrophy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btHomeTrophy"
-        app:srcCompat="@android:drawable/ic_menu_help" />
+        app:layout_constraintBottom_toBottomOf="@+id/btHomeSettings"
+        app:layout_constraintStart_toEndOf="@+id/btHomeSettings"
+        app:layout_constraintTop_toTopOf="@+id/btHomeSettings"
+        app:srcCompat="@drawable/help" />
 
     <ImageButton
         android:id="@+id/btHomeSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
         android:onClick="launchSettingsScreen"
-        app:layout_constraintBottom_toBottomOf="@+id/tvAppName"
+        app:layout_constraintBottom_toBottomOf="@+id/btHomeInformation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toEndOf="@+id/tvAppName"
-        app:layout_constraintTop_toTopOf="@+id/tvAppName"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@android:drawable/ic_menu_preferences" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btHomeInformation"
+        app:srcCompat="@drawable/settings" />
 
 </android.support.constraint.ConstraintLayout>
