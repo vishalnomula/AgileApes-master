@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/junglewithvines"
+    android:background="@drawable/homebackground"
     tools:context=".HomeActivity">
 
     <TextView
@@ -38,8 +38,8 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
 
-        android:layout_marginTop="85dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginBottom="90dp"
         android:background="@drawable/my_button_bg"
         android:fontFamily="@font/windlass"
         android:onClick="launchQuizScreen"
@@ -51,31 +51,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btHomeInfo" />
-
-    <ImageButton
-        android:id="@+id/btHomeInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="20dp"
-        android:background="@android:color/transparent"
-        android:onClick="launchAboutScreen"
-        app:layout_constraintEnd_toStartOf="@+id/btHomeSettings"
-        app:layout_constraintTop_toBottomOf="@+id/ivHomeMonkeyCartoonClipArt"
-        app:srcCompat="@drawable/info" />
+        app:layout_constraintTop_toBottomOf="@+id/btHomeSettings" />
 
     <ImageView
         android:id="@+id/ivHomeBananaCartoon"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tvHomeBananaNumber"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btHomeInfo"
         app:srcCompat="@drawable/bananacartoon" />
 
     <TextView
@@ -94,29 +79,17 @@
         app:layout_constraintTop_toTopOf="@+id/ivHomeBananaCartoon" />
 
     <ImageButton
-        android:id="@+id/btHomeHelp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:background="@android:color/transparent"
-        android:onClick="launchHowToPlayScreen"
-        app:layout_constraintBottom_toBottomOf="@+id/btHomeSettings"
-        app:layout_constraintStart_toEndOf="@+id/btHomeSettings"
-        app:layout_constraintTop_toTopOf="@+id/btHomeSettings"
-        app:srcCompat="@drawable/help" />
-
-    <ImageButton
         android:id="@+id/btHomeSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:background="@android:color/transparent"
         android:onClick="launchSettingsScreen"
-        app:layout_constraintBottom_toBottomOf="@+id/btHomeInfo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btHomeInfo"
+        app:layout_constraintTop_toBottomOf="@+id/ivHomeMonkeyCartoonClipArt"
         app:srcCompat="@drawable/settings" />
 
 </android.support.constraint.ConstraintLayout>

@@ -18,16 +18,6 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(myIntent);
     }
 
-    public void launchHowToPlayScreen(View v) {
-        Intent myIntent = new Intent(getBaseContext(), HowToPlayActivity.class);
-        startActivity(myIntent);
-    }
-
-    public void launchAboutScreen(View v) {
-        Intent myIntent = new Intent(getBaseContext(), AboutActivity.class);
-        startActivity(myIntent);
-    }
-
     public void launchQuizScreen(View v) {
         Intent myIntent = new Intent(getBaseContext(), QuizActivity.class);
         startActivity(myIntent);

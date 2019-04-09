@@ -37,7 +37,7 @@
     <color name="OldLace">#FDF5E6</color>
     <color name="LightGoldenrodYellow">#FAFAD2</color>
     <color name="Linen">#FAF0E6</color>
-    <color name="AntiqueWhite">#FAEBD7</color>
+    <color name="AntiqueWhite">#CAEBDA</color>
     <color name="Salmon">#FA8072</color>
     <color name="GhostWhite">#F8F8FF</color>
     <color name="MintCream">#F5FFFA</color>
@@ -100,7 +100,7 @@
     <color name="Olive">#808000</color>
     <color name="Purple">#800080</color>
     <color name="Maroon">#800000</color>
-    <color name="Aquamarine">#7FFFD4</color>
+    <color name="Aquamarine">#150D11</color>
     <color name="Chartreuse">#7FFF00</color>
     <color name="LawnGreen">#7CFC00</color>
     <color name="MediumSlateBlue">#7B68EE</color>
