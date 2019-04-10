@@ -13,11 +13,6 @@ public class CorrectAnswerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_correct_answer);
     }
 
-    public void goToProgress(View v) {
-        Intent myIntent = new Intent(getBaseContext(), ProgressActivity.class);
-        startActivity(myIntent);
-    }
-
     public void goToQuiz(View v) {
         Intent myIntent = new Intent(getBaseContext(), QuizActivity.class);
         startActivity(myIntent);

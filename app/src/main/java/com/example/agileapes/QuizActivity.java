@@ -22,4 +22,9 @@ public class QuizActivity extends AppCompatActivity {
         Intent myIntent = new Intent(getBaseContext(), CorrectAnswerActivity.class);
         startActivity(myIntent);
     }
+
+    public void launchIncorrectAnswer(View v) {
+        Intent myIntent = new Intent(getBaseContext(), IncorrectAnswerActivity.class);
+        startActivity(myIntent);
+    }
 }

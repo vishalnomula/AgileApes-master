@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".IncorrectAnswerActivity"></activity>
-        <activity android:name=".ProgressActivity" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".CorrectAnswerActivity" />
         <activity android:name=".SettingsActivity" />

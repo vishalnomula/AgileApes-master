@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".QuizActivity">
 
+    <Button
+        android:id="@+id/btDummyIncorrectAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginBottom="51dp"
+        android:onClick="launchIncorrectAnswer"
+        android:text="Dummy Button Incorrect Answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/tvQuizTitle"
         android:layout_width="wrap_content"
@@ -63,11 +75,11 @@
         app:layout_constraintTop_toBottomOf="@+id/ivQuizMonkey" />
 
     <Button
-        android:id="@+id/btDummy"
+        android:id="@+id/btDummyCorrectAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="launchCorrectAnswer"
-        android:text="Dummy Button"
+        android:text="Dummy Button Correct Answer"
         tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="540dp" />
 
