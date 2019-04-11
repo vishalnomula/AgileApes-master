@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="124dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="125dp"
         android:fontFamily="@font/windlass"
         android:text="Correct!"
@@ -84,5 +84,17 @@
         app:layout_constraintStart_toEndOf="@+id/ivCorrectAnswerBananaCartoon"
         app:layout_constraintTop_toTopOf="@+id/ivCorrectAnswerBananaCartoon"
         app:layout_constraintVertical_bias="0.666" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/ivCorrectAnswerHappyMonkeyTransparentBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="56dp"
+        android:src="@drawable/happymonkeytransparentbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCorrectAnswerNext" />
 
 </android.support.constraint.ConstraintLayout>

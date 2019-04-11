@@ -13,7 +13,7 @@
         android:layout_height="50dp"
 
         android:layout_marginStart="152dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="152dp"
         android:background="@drawable/my_button_bg"
         android:fontFamily="@font/windlass"
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="124dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="125dp"
         android:fontFamily="@font/windlass"
         android:text="Incorrect!"
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="31dp"
         android:fontFamily="@font/tacobox_"
         android:text="user answer"
@@ -63,7 +63,7 @@
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.463"
@@ -89,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="103dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="104dp"
         android:fontFamily="@font/windlass"
         android:text="Correct Answer"
@@ -103,7 +103,7 @@
         android:id="@+id/tvIncorrectAnswerCorrectAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/tacobox_"
         android:text="correct answer"
         android:textAlignment="center"
@@ -113,5 +113,17 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvIncorrectAnswerCorrectAnswerIs" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/ivIncorrectAnswerSadMonkeyTransparentBackground"
+        android:layout_width="193dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="109dp"
+        android:src="@drawable/sadmonkeytransparentbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btIncorrectAnswerNext" />
 
 </android.support.constraint.ConstraintLayout>
